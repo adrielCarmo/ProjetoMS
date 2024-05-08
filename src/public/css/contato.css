@@ -1,0 +1,13 @@
+.conteudo {
+    margin-top: 75px;
+    font-family: 'Rubik', sans-serif; 
+    font-weight: bold;
+    color: #fff;
+}
+.logo-equipe {
+    background-color: #515e7b;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+}

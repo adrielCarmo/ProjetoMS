@@ -1,0 +1,63 @@
+.image-carrosel {
+    height: 400px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+.nav-conteudo {
+    list-style: none;
+}
+.card {
+    width: 250px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.conteudo {
+    margin-bottom: 100px;
+}
+.nav-conteudo li {
+    margin-top: 0px;
+    margin-bottom: 200px;
+    margin-left: 100px;
+    float: inline;
+}
+.nav-conteudo h2 {
+    margin-left: -270px;
+    margin-bottom: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 70px;
+    font-style: italic;
+}
+.text {
+    margin-left: -270px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
+    font-size: 20px;
+    font-style: normal;
+    text-align: justify;
+}
+.conteudo h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+.conteudo h3 {
+    margin-left: 12.5vw;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.links li {
+    margin-left: 12.5vw;
+    font-size: 20px;
+    font-weight: bold;
+}
+.card:hover {
+    color: white;
+    background: rgb(0,0,0);
+    background: linear-gradient(325deg, rgba(0,0,0,1) 5%, rgba(207,144,0,1) 53%, rgba(0,0,0,1) 95%);
+    transition: 1s;
+}

@@ -1,0 +1,71 @@
+extends layout 
+
+block links 
+  link(rel="stylesheet" href="/public/css/professores.css")
+  title Professores · Quem Somos
+block principal 
+  .conteudo
+    br
+    br
+    h1 Professores
+    .d-flex.bd-highlight
+      .d-inline-flex.p-2.bd-highlight.img-thumbnail
+        img.rounded.float-left(src="/public/images/foto-fabio.jpg" style="width: 265px; object-fit: cover;" alt="Foto Professor Fábio")
+      .d-inline-flex.p-2.bd-highlight
+        .d-flex.flex-column.bd-highlight.mb-3
+          .p-2.bd-highlight
+            h2 Prof. Fábio Silva
+          .p-2.bd-highlight.
+            Possui graduação em Engenharia da Computação - Faculdades Associadas de São Paulo (2006), especialização pela FACEL em Docência em Ciência e Tecnologia da Informação (2018) e especialização pela FIAR em Licenciatura Pedagógica em História. Atualmente é professor efetivo do IFMS. Tem experiência na área de Ciência da Computação, com ênfase em Análise e Desenvolvimento/Desenvolvimento Web.
+
+          br
+          a(href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K8359508Y6" target="_blank")
+            button.btn.btn-lg.btn-danger(type="button" data-toggle="popover" title="Saiba Mais" data-content="Sei lá") Currículo Lattes
+    br
+    br
+    br
+    br
+    .d-flex.bd-highlight
+      .d-inline-flex.p-2.bd-highlight.img-thumbnail
+        img.rounded.float-left(src="/public/images/foto-rafael.png" style="width: 265px; object-fit: cover;" alt="Foto Professor Rafael")
+      .d-inline-flex.p-2.bd-highlight
+        .d-flex.flex-column.bd-highlight.mb-3
+          .p-2.bd-highlight
+            h2 Prof. Rafael Souza
+          .p-2.bd-highlight Doutorando em Letras/Linguagem literária e interfaces sociais: estudos comparados pela UNIOSTE, com a pesquisa sobre o processo de análise crítica literária feminista em território nacional no romance de Conceição Evaristo, Insubmissas Lágrimas de mulheres; mestre em Letras/ Literatura e práticas culturais (Bolsista FUNDECT) pela Universidade Federal da Grande Dourados (2017), onde analisou a construção do sujeito que sofre com os efeitos da imigração no romance, Americanah (2013)...
+          br
+          a(href="http://lattes.cnpq.br/1191274764237349" target="_blank")
+            button.btn.btn-lg.btn-danger(type="button" data-toggle="popover" title="Saiba Mais" data-content="Sei lá") Currículo Lattes
+    br
+    br
+    br
+    br
+    .d-flex.bd-highlight
+      .d-inline-flex.p-2.bd-highlight.img-thumbnail
+        img.rounded.float-left(src="/public/images/foto-guilherme.png" style="width: 265px; object-fit: cover;" alt="Foto Professor Guilherme")
+      .d-inline-flex.p-2.bd-highlight
+        .d-flex.flex-column.bd-highlight.mb-3
+          .p-2.bd-highlight
+            h2 Prof. Guilherme Tommaselli
+          .p-2.bd-highlight.
+            Possui graduação em Ciências Sociais pela Universidade Estadual Paulista Júlio de Mesquita Filho (2009), mestrado em Educação pela Universidade Estadual Paulista Júlio de Mesquita Filho (2012) e doutorado em Educação pela Universidade Estadual Paulista Júlio de Mesquita Filho (2018). Atualmente é docente de sociologia do Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso do Sul. Tem experiência na área de Educação, com...
+
+          br
+          a(href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4270899P3" target="_blank")
+            button.btn.btn-lg.btn-danger(type="button" data-toggle="popover" title="Saiba Mais" data-content="Sei lá") Currículo Lattes
+    br
+    br
+    br
+    br
+    br
+    br
+    .alert.alert-success.alert-dismissible.fade.show.bg-dark.text-white.container(role="alert")
+      h4.alert-heading Chegou ao fim!
+      p.
+        Aêêê! Você conseguiu ler todo o conteúdo de nosso site!
+
+      button.close(type="button" data-dismiss="alert" aria-label="Close")
+        span(aria-hidden="true") ×
+      hr
+      p.mb-0.
+        Caso tenha alguma dúvida, entre em contato conosco por um de nossos canais de comunicação!

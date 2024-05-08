@@ -1,0 +1,93 @@
+extends layout
+
+block links 
+  title Estudantes · Quem Somos
+  link(rel="stylesheet" href="/public/css/estudantes.css")
+  
+block principal
+  br
+  br
+  .conteudo
+    h1 Estudantes
+    .d-flex.bd-highlight
+      .d-inline-flex.p-2.bd-highlight.img-thumbnail
+        img.rounded.float-left(src="/public/images/adriel-gala.jpg" style="width: 265px; object-fit: cover;" alt="Foto Adriel")
+      .d-inline-flex.p-2.bd-highlight
+        .d-flex.flex-column.bd-highlight.mb-3
+          .p-2.bd-highlight
+            h2 Adriel Carmo
+          .p-2.bd-highlight
+            | Estudante da turma 126, do 6º período matriculado no Curso Técnico Integrado em Informática no IFMS (Campus Campo Grande).
+
+            br
+            br
+            strong Algumas Curiosidades:
+            ul
+              li Tocar Guitarra...
+              li Viciado em Cafeína...
+          a(href="https://www.instagram.com/adriell_carmoo/" target="_blank")
+            button.btn.btn-lg.btn-danger(type="button" data-toggle="popover" title="Saiba Mais" data-content="Sei lá") Instagram
+    br
+    br
+    br
+    br
+    .d-flex.bd-highlight
+      .d-inline-flex.p-2.bd-highlight.img-thumbnail
+        img.rounded.float-left(src="/public/images/vinicius-gala.jpg" style="width: 265px; object-fit: cover;" alt="Foto Vinícius")
+      .d-inline-flex.p-2.bd-highlight
+        .d-flex.flex-column.bd-highlight.mb-3
+          .p-2.bd-highlight
+            h2 Vinícius Batista
+          .p-2.bd-highlight
+            | Estudante da turma 126, do 6º período matriculado no Curso Técnico Integrado em Informática no IFMS (Campus Campo Grande).
+
+            br
+            br
+            strong Algumas Curiosidades:
+            ul
+              li Cuidar de planta...
+              li Vibe Vegana...
+          br
+          a(href="https://www.instagram.com/vinicius_oliveira_eu/" target="_blank")
+            button.btn.btn-lg.btn-danger(type="button" data-toggle="popover" title="Saiba Mais" data-content="Sei lá") Instagram
+    br
+    br
+    br
+    br
+    .d-flex.bd-highlight
+      .d-inline-flex.p-2.bd-highlight.img-thumbnail
+        img.rounded.float-left(src="/public/images/haufes-gala.jpg" style="width: 265px; object-fit: cover;" alt="Foto João")
+      .d-inline-flex.p-2.bd-highlight
+        .d-flex.flex-column.bd-highlight.mb-3
+          .p-2.bd-highlight
+            h2 João Haufes
+          .p-2.bd-highlight
+            | Estudante da turma 126, do 6º período matriculado no Curso Técnico Integrado em Informática no IFMS (Campus Campo Grande).
+
+            br
+            br
+            strong Algumas Curiosidades:
+            ul
+              li Gosto de Filmes e Séries...
+              li Gosto de Aprender sobre diferentes Culturas...
+          br
+          a(href="https://www.instagram.com/joaohaufes/" target="_blank")
+            button.btn.btn-lg.btn-danger(type="button" data-toggle="popover" title="Saiba Mais" data-content="Sei lá") Instagram
+    br
+    br
+    br
+    br
+    br
+    br
+    .alert.alert-success.alert-dismissible.fade.show.bg-dark.text-white.container(role="alert")
+      h4.alert-heading Chegou ao fim!
+      p.
+        Aêêê! Você conseguiu ler todo o conteúdo de nosso site!
+
+      button.close(type="button" data-dismiss="alert" aria-label="Close")
+        span(aria-hidden="true") ×
+      hr
+      p.mb-0.
+        Caso tenha alguma dúvida, entre em contato conosco por um de nossos canais de comunicação!
+    br
+    br

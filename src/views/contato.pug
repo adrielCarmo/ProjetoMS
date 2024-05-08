@@ -1,0 +1,60 @@
+extends layout 
+
+block links 
+  include language/contato-idiomas.pug 
+  title=`${titlePG[idioma]}`
+  link(rel="stylesheet" href="/public/css/contato.css")
+  script(src="/jquery/jquery.min.js")
+  script(src="/public/js/contato.js") 
+
+block principal
+
+  if msgRetorno
+    .modal.fade#msgModal(tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true")
+      .modal-dialog.modal-dialog-centered(role="document")
+        .modal-content
+          .modal-header
+            h5.modal-title#TituloModalCentralizado=`${titleModal[idioma]}` 
+            button.close(type="button" data-dismiss="modal" aria-label="Fechar")
+              span(aria-hidden="true").i.fas.fa-window-close
+          .modal-body
+            .d-flex.justify-content-start
+              .text-center.logo-equipe
+                img(src="/public/images/milton-logo.png" style="width: 50px; border-radius: 20px;" alt="Logo Milton Santos")
+                a(style="color: #fff; font-family: \'Rubik\', sans-serif; font-weight: bold;")=` ${textModal[idioma]}`
+            strong=`${msgRetorno}`
+          .modal-footer
+            button.btn.btn-secondary.bg-primary.text-ligth(type="button" data-dismiss="modal")=`${buttonModal[idioma]}`
+
+  .container.conteudo
+    .d-flex.p-2.justify-content-center
+      .text-center.logo-equipe
+        img(src="/public/images/milton-logo.png" style="width: 50px; border-radius: 20px;" alt="Logo Milton Santos")
+        a(style="color: #fff; font-family: \'Rubik\', sans-serif; font-weight: bold;")=` ${textModal[idioma]}`
+    .row.justify-content-center
+      .container.col-8
+        .jumbotron.bg-dark.text-white
+          h1.text-center(style="font-weight: bold;")
+            i.fas.fa-envelope
+            |  
+            a=`${titleConteudo[idioma]}`
+          .formulario
+            form.was-validated(action=`/enviarMensagem/${idioma}` method="POST")
+              .form-group
+                label(for="Nome")=`${form1[idioma]}`
+                input.form-control.form-control-lg#nome(type="text" name="nome" placeholder="Ex: José da Silva" rows="3", required)
+              .form-group
+                label(for="E-mail")=`${form2[idioma]}`
+                input.form-control.form-control-lg#email(type="email" name="email" placeholder=`${placeholder[idioma]}`, required)
+              .form-group
+                label(for="Mensagem")=`${form3[idioma]}`
+                textarea.form-control.form-control-lg#mensagem(type="mensagem" name="mensagem" required)
+              button.btn.btn-primary.mb-2(type="submit")=`${buttonSend[idioma]}`
+  .alert.alert-success.alert-dismissible.fade.show.bg-dark.text-white.container(role="alert")
+    h4.alert-heading=`${titlePop[idioma]}`
+    p=`${subtitlePop[idioma]}`
+
+    button.close(type="button" data-dismiss="alert" aria-label="Close")
+      span(aria-hidden="true").i.fas.fa-window-close
+    hr
+    p.mb-0=`${textPop[idioma]}`

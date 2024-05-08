@@ -1,0 +1,31 @@
+.conteudo h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.image-scroll {
+    border-radius: 10px;
+    width: 800px;
+}
+.zoom {
+    overflow: hidden;
+}
+.zoom img {
+    max-width: 100%;
+    transition: all 0.3s;
+    border-radius: 10px;
+}
+.zoom img:hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.text-redacao {
+    margin-top: 50px;
+}
+.text-redacao p {
+    text-align: justify;
+}

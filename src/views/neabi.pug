@@ -1,0 +1,56 @@
+extends layout 
+
+block links 
+  title NEABI · Quem Somos
+  link(rel="stylesheet" href="/public/css/neabi.css")
+  
+block principal 
+  .conteudo 
+    br
+    br
+    h1 NEABI  
+    .d-flex.bd-highlight
+      .d-inline-flex.p-2.bd-highlight.img-thumbnail
+        img.rounded.float-left(src="/public/images/neabi-image.png" style="object-fit: cover;" alt="Indígena Afro-Brasileira")
+      .d-inline-flex.p-2.bd-highlight
+        .d-flex.flex-column.bd-highlight.mb-3
+          .p-2.bd-highlight
+            h2 O que é?
+          .p-2.bd-highlight.
+            De natureza propositiva e consultiva, o Núcleo de Estudos Afro-Brasileiros e Indígenas (Neabi) tem a função de auxiliar no direcionamento de estudos, pesquisas e ações de extensão que promovam a reflexão sobre as questões étnico-raciais. Vinculado às Direções de Ensino, Pesquisa e Extensão dos campi do IFMS, sob as diretrizes da Pró-Reitoria de Extensão (Proex), o Neabi também busca contribuir para a implementação da exigência legal que obriga incluir no currículo escolar a temática “História e Cultura Afro-Brasileira e Indígena”.
+
+    br
+    br
+    br
+    br
+    .d-flex.bd-highlight
+      .d-inline-flex.p-2.bd-highlight.img-thumbnail
+        img.rounded.float-left(src="/public/images/indio-image.jpg" style="object-fit: cover;" alt="Índio Afro-Brasileiro")
+      .d-inline-flex.p-2.bd-highlight
+        .d-flex.flex-column.bd-highlight.mb-3
+          .p-2.bd-highlight
+            h2 Objetivos
+          .p-2.bd-highlight
+            | Alguns dos objetivos do NEABI, são:
+
+            ul
+              br
+              li Promover ações de valorização das identidades negra e indígenas, impulsionando a cultura da educação para a convivência e aceitação da diversidade;
+              li Propor ações de levantamento do perfil da comunidade interna e externa quanto aos aspectos étnico-raciais;
+              li Atuar como núcleo proponente e consultivo para assuntos referentes às políticas....
+          a(href="#regulamento")
+            button.btn.btn-lg.btn-danger(type="button" data-toggle="popover" title="Saiba Mais" data-content="Sei lá") Saiba Mais
+    br
+    br
+    br
+    br
+    div(data-spy="scroll" data-target="#navbar-exemplo3" data-offset="0")
+      .jumbotron.container.bg-dark.text-white
+        h1#regulamento.display-4 Regulamento
+        p.lead.
+          O Regulamento do Núcleo de Estudos Afro-brasileiros e Indígenas do IFMS traz as finalidades, objetivos, estrutura organizacional e competências do Neabi.
+
+        hr.my-4
+        img(src="/public/images/ifms.png" alt="Logo IFMS" style="width: 150px; border-radius: 10px;")
+        p Acesse agora o documento completo com todas as informações acerca do Projeto NEABI:
+        a.btn.btn-primary.btn-lg(href="https://www.ifms.edu.br/centrais-de-conteudo/documentos-institucionais/regulamentos/Resolucao09016RegulamentodoNucleodeEstudosAfroeIndigenasNeabi.pdf" target="_blank" role="button") Leia mais

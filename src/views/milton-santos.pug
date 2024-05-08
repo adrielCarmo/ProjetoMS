@@ -1,0 +1,55 @@
+extends layout 
+
+block links
+  include language/milton-santos-idiomas 
+  title=`${titlePG[idioma]}`
+  link(rel="stylesheet" href="/public/css/milton-santos.css")
+  
+
+block principal 
+  .conteudo
+    br
+    br
+    div(data-spy="scroll" data-target="#navbar-exemplo3" data-offset="0")
+      .jumbotron.container.bg-dark.text-white
+        h1#regulamento.display-4
+          i.fas.fa-book
+          |  Milton Santos
+        .text-center
+          .zoom
+            figure.figure
+              img.figure-img.img-fluid.rounded.image-scroll(src="/public/images/milton-honoris.jpg" alt="Honoris Causa - Milton Santos")
+              figcaption.figure-caption.text-white.font-weight-bold.font-italic
+                =`${legendText[idioma]}`
+
+                br
+                span Flickr: 
+                a(href="https://flic.kr/s/aHsjuNNRKD" target="_blank")=`${legendLink[idioma]}`
+        .text-redacao
+          h2.font-weight-bold.font-italic=`${tituloAutor[idioma]}`
+          br
+          p.lead=`${textoAutorP1[idioma]}`
+
+          p.lead=`${textoAutorP2[idioma]}`
+
+          p.lead=`${textoAutorP3[idioma]}`
+
+          p.lead=`${textoAutorP4[idioma]}`
+            
+          p.lead=`${textoAutorP5[idioma]}`
+
+          p.lead=`${textoAutorP6[idioma]}`
+
+          br
+          br
+          br
+          p
+            i.far.fa-registered
+            strong=` ${textProduced[idioma]}`
+            |  Adriel Carmo, João Haufes e Vinícius Batista.
+        hr.my-4
+        img(src="/public/images/ifms.png" alt="Logo IFMS" style="width: 150px; border-radius: 10px;")
+        br
+        br
+        p=`${textPlus[idioma]}`
+        a.btn.btn-primary.btn-lg(href="http://www.miltonsantos.com.br/site/miltonsantos_curriculum.pdf" target="_blank" role="button")=`${linkPlus[idioma]}`

@@ -1,0 +1,55 @@
+/*
+.nav-principal {
+  display: flex; espaços disponiveis entre os componentes  
+  align-content: space-between;
+}
+*/
+
+.nav-link {
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    transition: 0.5s;
+    background-color: rgb(70, 131, 58);
+    border-radius: 12px;
+}
+
+.image-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.sombra-nav {
+    position: absolute fixed;
+    top: 50px;
+    background-color: #183153;
+    padding: 12px;
+    position: fixed;
+    z-index: 10;
+}
+
+.rodape {
+    background-color: #222;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    line-height: normal;
+    padding: 20px;
+}
+
+.imagemRod {
+    width: 100px;
+    border-radius: 100px;
+    /* NAVEGADORES ANTIGOS: */
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+.imagemRod:hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+    opacity: 0.8;
+}

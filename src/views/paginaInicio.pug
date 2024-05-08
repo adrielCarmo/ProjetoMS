@@ -1,0 +1,123 @@
+extends layout 
+
+block links
+  include language/paginaInicio-idiomas
+  title=`${titlePG[idioma]}`
+  link(rel="stylesheet" href="/public/css/paginaInicio.css")
+
+block principal
+  #carouselExampleIndicators.carousel.slide.carousel-fade(data-ride="carousel")
+    ol.carousel-indicators
+      li.active(data-target="#carouselExampleIndicators" data-slide-to="0")
+      li(data-target="#carouselExampleIndicators" data-slide-to="1")
+      li(data-target="#carouselExampleIndicators" data-slide-to="2")
+    .carousel-inner(style="background-color: black;")
+      .carousel-item.active
+        img.d-block.w-100.image-carrosel(src="/public/images/milton-capa.webp" alt="Primeiro Slide")
+        .carousel-caption.d-none.d-md-block
+          h5
+            strong Milton Santos
+          p(style="color: white; font-style: italic;")
+            strong=`${subtitleCAR1[idioma]}`
+      .carousel-item(style="background-color: black;")
+        img.d-block.w-100.image-carrosel(src="/public/images/milton-escritor.jpeg" alt="Segundo Slide")
+        .carousel-caption.d-none.d-md-block
+          h5
+            strong Milton Santos
+          p(style="color: white; font-style: italic;")
+            strong=`${subtitleCAR2[idioma]}` 
+      .carousel-item(style="background-color: black;")
+        img.d-block.w-100.image-carrosel(src="/public/images/milton-sentado.jpg" alt="Terceiro Slide")
+        .carousel-caption.d-none.d-md-block
+          h5(style="color: white;")
+            strong Milton Santos
+          p(style="color: white; font-style: italic;")
+            strong=`${subtitleCAR1[idioma]}` 
+    a.carousel-control-prev(href="#carouselExampleIndicators" role="button" data-slide="prev")
+      span.carousel-control-prev-icon(aria-hidden="true")
+      span.sr-only Anterior
+    a.carousel-control-next(href="#carouselExampleIndicators" role="button" data-slide="next")
+      span.carousel-control-next-icon(aria-hidden="true")
+      span.sr-only Próximo
+  br
+  br
+  br
+  br
+  .conteudo
+    h1 Milton Santos
+    ul.nav-conteudo
+      li
+        .container
+          .row
+            .col-sm
+              .card
+                img.card-img-top(src="/public/images/milton-santos.jpg" alt="Imagem de capa do card")
+                .card-body
+                  h5.card-title Geógrafo
+                  p.card-text Milton Santos foi um geógrafo brasileiro, considerado um dos maiores no Brasil e no mundo...
+                  a.btn.btn-primary(href="#") Visitar
+            .col-sm
+              h2=`${titleC1[idioma]}`
+              p.text=`${textC1[idioma]}`
+      li
+        .container
+          .row
+            .col-sm
+              .card
+                img.card-img-top(src="/public/images/milton-escritor.jpeg" alt="Imagem de capa do card")
+                .card-body
+                  h5.card-title Escritor
+                  p.card-text “A força da alienação vem dessa fragilidade dos indivíduos que apenas conseguem identificar o que os separa e não o que os une.”
+                  a.btn.btn-primary(href="#") Visitar
+            .col-sm
+              h2=`${titleC2[idioma]}`
+              p.text=`${textC2[idioma]}`
+                br
+                =`${topics1[idioma]}`
+                br
+                =`${topics2[idioma]}`
+                br
+                =`${topics3[idioma]}`
+                br
+                =`${topics4[idioma]}`
+                br
+                =`${topics5[idioma]}`
+                br
+                =`${topics6[idioma]}`
+                br
+                =`${topics7[idioma]}`
+      li
+        .container
+          .row
+            .col-sm
+              .card
+                img.card-img-top(src="/public/images/milton-carica.jpg" alt="Imagem de capa do card")
+                .card-body
+                  h5.card-title Curiosidades
+                  p.card-text Milton Santos faleceu em 24 de junho de 2001, vítima de complicações geradas por um câncer, aos 75 anos. Deixou uma vasta obra de vida, com dezenas de livros e uma infinidade de textos, artigos, capítulos e inúmeras críticas sociais.
+                  a.btn.btn-primary(href="#") Visitar
+            .col-sm
+              h2=`${titleC3[idioma]}`
+              p.text
+                =`${phrase1[idioma]}`
+                br
+                br
+                =`${phrase2[idioma]}`
+                br
+                br
+                =`${phrase3[idioma]}`
+                br
+                br
+                =`${phrase4[idioma]}`
+                br
+                br
+    h3=`${titleRef[idioma]}`
+    ul.links
+      li
+        a(href="https://www.todamateria.com.br/milton-santos/" target="_blank")=`${Ref1[idioma]}`
+      li
+        a(href="https://www.culturagenial.com/milton-santos-biografia-e-obras/" target="_blank")=`${Ref2[idioma]}`
+      li
+        a(href="https://www.geledes.org.br/milton-santos-2/" target="_blank") Geledés - Milton Santos
+      li
+        a(href="https://www.brasildefato.com.br/2019/05/03/o-legado-de-milton-santos-um-novo-mundo-possivel-surgira-das-periferias" target="_blank")=`${Ref3[idioma]}`

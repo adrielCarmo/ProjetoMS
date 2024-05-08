@@ -1,0 +1,27 @@
+{
+  "name": "projetoms",
+  "version": "1.0.0",
+  "description": "Projeto sobre Milton Santos, importante geógrafo, escritor, cientista, jornalista, advogado e professor universitário brasileiro.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js",
+    "start": "babel-node src/server.js"
+  },
+  "author": "Adriel Carmo, Vinícius Batista e João Haufes.",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/node": "^7.14.7",
+    "@babel/preset-env": "^7.14.7",
+    "bootstrap": "^4.6.0",
+    "express": "^4.19.2",
+    "jquery": "^3.6.0",
+    "marko": "^5.11.2",
+    "pg": "^8.6.0",
+    "popper.js": "^1.16.1",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.10"
+  }
+}
